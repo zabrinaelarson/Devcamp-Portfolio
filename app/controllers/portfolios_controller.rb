@@ -13,7 +13,6 @@ class PortfoliosController < ApplicationController
     respond_to do |format|
       if @portfolio_items.save
         format.html { redirect_to portfolio_path, notice: 'Portfolio item was successfully created.' }
-        format.json { render :show, status: :created, location: @portfolio_items }
       else
         format.html { render :new }
       end
