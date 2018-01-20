@@ -12,7 +12,8 @@ class PortfoliosController < ApplicationController
 
     respond_to do |format|
       if @portfolio_items.save
-        format.html { redirect_to portfolio_path, notice: 'Portfolio item was successfully created.' }
+        format.html { redirect_to @portfolio_path, notice: 'Portfolio item was successfully created.' }
+        format.json { render :show, status: :created, location: @portfolio_item }
       else
         format.html { render :new }
       end
@@ -37,5 +38,18 @@ class PortfoliosController < ApplicationController
     
     def show
       @portfolio_item = Portfolio.find (params[:id])
+    end
+    
+    def destroy
+      #Perform the lookup
+      @portfolio_item = Portfolio.find (params[:id])
+      
+      #Deletes the record 
+    @portfolio_item.destroy
+     
+     #redirect
+    respond_to do |format|
+      format.html { redirect_to portfolios_url, notice: 'Record was removed.' }
+    end
     end
 end
