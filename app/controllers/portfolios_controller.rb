@@ -11,6 +11,7 @@ class PortfoliosController < ApplicationController
       @angular_portfolio_items = Portfolio.angular
     end
     
+    
     def create
     @portfolio_items = Portfolio.new(params.require(:portfolio).permit(:title, :subtitle, :body))
 
