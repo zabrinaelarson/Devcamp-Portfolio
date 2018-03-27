@@ -1,10 +1,10 @@
 class PortfoliosController < ApplicationController
     def index
-        @portfolio_item = Portfolio.all
+        @portfolio_items = Portfolio.all
     end
     
     def new 
-        @portfolio_item = Portfolio.all
+        @portfolio_item = Portfolio.new
         3.times { @portfolio_item.technologies.build }
     end
     
@@ -14,11 +14,11 @@ class PortfoliosController < ApplicationController
     
     
     def create
-    @portfolio_items = Portfolio.new(params.require(:portfolio).permit(:title, :subtitle, :body, technologies_attributes: [:name]))
+    @portfolio_item = Portfolio.new(params.require(:portfolio).permit(:title, :subtitle, :body, technologies_attributes: [:name]))
 
     respond_to do |format|
-      if @portfolio_items.save
-        format.html { redirect_to @portfolio_path, notice: 'Portfolio item was successfully created.' }
+      if @portfolio_item.save
+        format.html { redirect_to portfolios_path, notice: 'Portfolio item was successfully created.' }
         format.json { render :show, status: :created, location: @portfolio_item }
       else
         format.html { render :new }
