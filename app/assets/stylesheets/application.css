@@ -12,3 +12,7 @@
  *
  *= require_self
  */
+
+.top a {
+    color: red;
+}
