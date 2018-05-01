@@ -5,7 +5,8 @@ class BlogsController < ApplicationController
   # GET /blogs
   # GET /blogs.json
   def index
-    @blogs = Blog.all
+    @blogs = Blog.all 
+    @blogs = Blog.featured_blogs
     @page_title= "Zabrina's Blog"
   end
 
@@ -54,6 +55,7 @@ class BlogsController < ApplicationController
     end
   end
 
+
   # DELETE /blogs/1
   # DELETE /blogs/1.json
   def destroy
@@ -73,7 +75,7 @@ class BlogsController < ApplicationController
 
     redirect_to blogs_url, notice: 'Post status has been updated.'
   end
-
+  
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_blog
