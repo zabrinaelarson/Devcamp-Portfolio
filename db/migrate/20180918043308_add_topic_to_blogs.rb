@@ -1,4 +1,4 @@
-class AddTopicReferenceTo < ActiveRecord::Migration[5.1]
+class AddTopicToBlogs < ActiveRecord::Migration[5.1]
   def change
     add_reference :blogs, :topic, foreign_key: true
   end
