@@ -80,3 +80,4 @@ gem 'mini_magick', '~> 4.9', '>= 4.9.3'
 
 gem 'cocoon', '~> 1.2', '>= 1.2.12'
 
+gem 'gritter', '~> 1.2'
