@@ -5,7 +5,7 @@ class Blog < ApplicationRecord
 
   default_scope {order(created_at: :desc)}
   
-  validates_presence_of :title, :body
+  validates_presence_of :title, :body, :topic_id
   
   belongs_to :topic
   
