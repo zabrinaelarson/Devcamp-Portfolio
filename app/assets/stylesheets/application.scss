@@ -19,7 +19,7 @@ a:hover {
   color: #333;
   text-shadow: none; /* Prevent inheritance from `body` */
   background-color: #fff;
-  border: .05rem solid #fff;
+  border: .05rem solid #fff; 
 }
 
 
@@ -223,4 +223,17 @@ body {
 
 .tech-news > .card {
   padding: 30px;
+}
+
+.app-card-container {
+  color: black;
+  text-align: left;
+}
+
+.app-card-container > .card {
+  padding: 40px
+}
+
+.app-card-container a {
+  color: blue;
 }
