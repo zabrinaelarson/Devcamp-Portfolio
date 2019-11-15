@@ -1,6 +1,16 @@
 @import "bootstrap";
 @import "gritter";
 
+@font-family{
+  font-family: 'Bree Serif';
+  src:font-url('BreeSerif-Regular.ttf');
+}
+
+@font-family{
+  font-family: 'Oswald';
+  src:font-url('Oswald-Regular.ttf');
+}
+
 /*
  * Globals
  */
@@ -11,6 +21,7 @@ a:focus,
 a:hover {
   color: #fff;
 }
+
 
 /* Custom default button */
 .btn-secondary,
@@ -30,11 +41,22 @@ a:hover {
 html,
 body {
   height: 100%;
+  font-family: 'Bree Serif';
 }
 body {
   color: #fff;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+  font-family: 'Bree Serif';
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Oswald';
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
