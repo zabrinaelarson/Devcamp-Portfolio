@@ -11,9 +11,19 @@ User.create!(
     name: "Z",
     password: "123456",
     password_confirmation: "123456"
+    roles: "site_admin"
     )
     
-puts "1 user created"
+puts "1 Admin user created"
+
+User.create!(
+    email: "z2@yeller.com",
+    name: "Z Normal",
+    password: "123456",
+    password_confirmation: "123456"
+    )
+    
+puts "1 regular user created"
 
 3.times do |topic|
     Topic.create!(

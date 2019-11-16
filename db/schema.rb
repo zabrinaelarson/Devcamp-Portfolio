@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 20190423024907) do
 
+# These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "blogs", force: :cascade do |t|
     t.string "title"
     t.text "body"
@@ -100,4 +103,9 @@ ActiveRecord::Schema.define(version: 20190423024907) do
     t.index ["slug"], name: "index_users_on_slug", unique: true
   end
 
+  add_foreign_key "blogs", "topics"
+  add_foreign_key "comments", "blogs"
+  add_foreign_key "comments", "users"
+  add_foreign_key "technologies", "portfolios"
 end
+
