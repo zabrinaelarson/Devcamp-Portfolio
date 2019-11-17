@@ -88,7 +88,9 @@ h6, .h6 {
  */
 
 .masthead {
-  margin-bottom: 5px;
+  margin-bottom: 100px;
+  position: sticky;
+  top: 0;
 }
 
 .masthead-brand {
@@ -146,6 +148,7 @@ h6, .h6 {
 
 .mastfoot {
   color: rgba(255,255,255,.5);
+  bottom: 0;
 }
 
 
@@ -227,11 +230,14 @@ h6, .h6 {
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   background: image-url('home_bg.png') no-repeat;
-  background-size: cover;
+  background-size: cover; 
 }
 
 .app-footer {
   color: white;
+  bottom: 0;
+  width: 100%;
+  position: sticky;
 }
 
 .tech-news {
@@ -250,6 +256,11 @@ h6, .h6 {
 .app-card-container {
   color: black;
   text-align: left;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-top: auto;
 }
 
 .app-card-container > .card {

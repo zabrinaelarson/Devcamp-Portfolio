@@ -1,5 +1,3 @@
-alert("hey there")
-
 
 /*
  * HTML5Sortable package
