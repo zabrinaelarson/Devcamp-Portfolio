@@ -23,17 +23,18 @@
         <div class="cover-container">
             
             <%= video_tag(
-              'HardDrivePhotojpeg.mp4',
+              'cover.mp4',
               id: 'background',
-              autoplay: true,
-              loops: true,
-              muted: true,
-              poster: 'home_bg.png'
+              autoplay: :autoplay,
+              loop: :loop,
+              muted: :muted,
+              poster: 'image.jpg'
               )
             %>
-        
-      
-            <%= render "shared/application_nav" %>
+
+            <div>
+              <%= render "shared/application_nav" %>
+            </div>
             
             <%= yield %>
             

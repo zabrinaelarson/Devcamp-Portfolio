@@ -282,3 +282,59 @@ h6, .h6 {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+.product-card {
+  margin-right: 20px;
+  margin-top: 100px;
+  border-radius: 10px;
+}
+
+.product-top {
+  margin-top: 30px;
+}
+
+.package-button {
+  color: #9c7c38;
+  font-size: 300%;
+  border-radius: 10px; 
+  background-color: #000000;
+  border: 3px solid black;
+}
+
+.package-body {
+  font-family: 'Bree Serif';
+  color: black;
+  background-color: #9c7c38;
+}
+
+.card-group  > .card {
+  border-radius: 10px;
+  background-color: #000000;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.consultation {
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.card {
+  border: 2px solid black;
+  font-family: 'Bree Serif';
+  color: black;
+  background-color: #9c7c38;
+}
+
+.contact-outline {
+  margin-top: 20px;
+}
+
+.coverbtn {
+  background-color: #9c7c38;
+  border: 2px solid black;
+  font-family: 'Bree Serif';
+  color: black;
+}

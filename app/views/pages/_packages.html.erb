@@ -1,0 +1,55 @@
+<div class="product-top">  
+    <div class="card-group">
+        <div class="card product-card">
+            <%= image_tag "Updates.png", alt:"Updates" %>
+            <div class="card-body package-body">
+                <h3 class="card-title">Updating</h3>
+                <p class="card-text">Got an exisiting website that needs to be updated with the newest styles? Made some changes to your buisness and need to that to be refelected for your internet presence? Take advantage of the lower prices today and get your website taken care of!</p>
+                <p>Updates start as follows:</p>
+                <ul>
+                    <li>1-15 updates-$35*</li>
+                    <li>15-30 updates-$45*</li>
+                    <li>30+ updates-$60*</li>
+                </ul>
+            </div>
+            <button type="button" class="btn btn-secondary package-button .btn-block"><%= link_to '$35-$60*', contact_path %></button>
+        </div>
+        <div class="card product-card">
+            <%= image_tag "Debugging.png", alt:"Debugging" %>
+            <div class="card-body package-body">
+                <h3 class="card-title">Debugging</h3>
+                <p class="card-text">Website throwing errors, or not funtioning as it shoud? At the moment I focus on rails applications but I am open to look at others. Lets connect to set up a consultation to get it up to the speed and functionality you want! Debugging starts at $40* a page.</p>
+            </div>
+            <button type="button" class="btn btn-secondary package-button .btn-block"><%= link_to '$40*', contact_path %></button>
+        </div>
+        <div class="card product-card ">
+            <%= image_tag "LandingPage.png", alt:"Landing Pages" %>
+            <div class="card-body package-body">
+                <h3 class="card-title">Landing Pages</h3>
+                <p class="card-text">Needing a solid landing page to emphasize your buisness and bring in an audience to advertise to? Or a place to collect market information? I will help you integrate with mailchimp to build an email list from while giving you a custom professionally built Land Page. Take advantage of my growing buisness and build the website <b>YOU</b> want starting at $50*.</p>
+            </div>
+            <button type="button" class="btn btn-secondary package-button .btn-block"><%= link_to '$50*', contact_path %></button>
+        </div>
+    </div>
+    <div class="card-group">
+        <div class="card product-card">
+            <%= image_tag "Basicwebsite.png", alt:"Basicwebsite" %>
+            <div class="card-body package-body">
+                <h3 class="card-title">Basic Website</h3>
+                <p class="card-text">Needing a Basic website built, 1-3 pages? Lets look at what you need and set you up to take advantage of the lower prices to get a professionally done website starting at $200*</p>
+            </div>
+            <button type="button" class="btn btn-secondary package-button .btn-block"><%= link_to '$200*', contact_path %></button>
+        </div>
+        <div class="card product-card">
+            <%= image_tag "Advancedwebsite.png", alt:"Advancedwebsite" %>
+            <div class="card-body package-body">
+                <h3 class="card-title">Advanced Website</h3>
+                <p class="card-text">Needing a large website built to showcase your buisness or ideas? Lets build the website you want at a price you can afford. Starting at $300*. </p>
+            </div>
+            <button type="button" class="btn btn-secondary package-button .btn-block"><%= link_to '$300*', contact_path %></button>
+        </div>
+    </div>
+    <div class="card btn-block package-body consultation">
+        <p class="card-text">* Anything you want done will start with a consultation where we go over what it is you're looking and you're time constraints to determine a price. The prices list are to give a genral idea of my prices.</p>
+    </div>
+</div>    

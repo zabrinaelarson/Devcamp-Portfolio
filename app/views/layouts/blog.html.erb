@@ -15,17 +15,18 @@ c<!DOCTYPE html>
   </head>
 
   <body>
-    <%= render 'shared/portfolio_nav' %>
-    <%= render 'shared/blog_masthead' %>
+    <div>
+      <%= render 'shared/portfolio_nav' %>
+    </div>
+    <div>
+      <%= render 'shared/blog_masthead' %>
+    </div>
+    <div class="container"> 
     
-    <div class="container">
-
-      <div class="row">
+      <%= yield %>
     
-        <%= yield %>
-    
-        <%= render 'shared/blog_sidebar' %>
-      </div>
+      <%= render 'shared/blog_sidebar' %>
+    </div>
         
       <%= render 'shared/blog_footer' %>
       
