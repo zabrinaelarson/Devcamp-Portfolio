@@ -9,12 +9,12 @@
     <div class="sidebar-module">
         <h4>Topics</h4>
         <% @side_bar_topics.each do |topic| %>
-        <p><%= link_to topic.title, topic_path(topic) %><p>
+        <p><%= link_to topic.title, topic_path(topic) %></p>
         <% end %>
     </div>
 
-    <div class="sidebar-module">
-        <h4>Archives</h4>
+    <div class="sidebar-module sidebar-links">
+        <h4>Archives</h4> 
         <ol class="list-unstyled">
             <li><a href="#">March 2014</a></li>
             <li><a href="#">February 2014</a></li>
@@ -31,7 +31,7 @@
         </ol>
     </div>
 
-    <div class="sidebar-module social-links">
+    <div class="sidebar-module social-links sidebar-links">
         <h4>Elsewhere</h4>
         <ol class="list-unstyled">
             <li><a href="#"><%= fa_icon "github" %></a></li>

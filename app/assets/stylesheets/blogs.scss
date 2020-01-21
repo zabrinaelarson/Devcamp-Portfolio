@@ -2,6 +2,16 @@
 @import "font-awesome";
 @import "gritter";
 
+@font-family{
+  font-family: 'Bree Serif';
+  src:font-url('BreeSerif-Regular.ttf');
+}
+
+@font-family{
+  font-family: 'Oswald';
+  src:font-url('Oswald-Regular.ttf');
+}
+
 
 /*
  * Globals
@@ -160,12 +170,17 @@ h6, .h6 {
  */
 
 .blog-footer {
-  margin-top: 20px;
+  margin-top: 1px;
   padding: 2.5rem 0;
   color: #999;
   text-align: center;
   background-color: #f9f9f9;
   border-top: .05rem solid #e5e5e5;
+  position: fixed;
+  height: 50px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
 }
 .blog-footer p:last-child {
   margin-bottom: 0;
@@ -203,4 +218,32 @@ h6, .h6 {
 
 .nav {
   color: black;
+}
+
+.blog-sidebar {
+  float: right;
+  position: sticky;
+  margin-bottom: 60px;
+}
+
+.sidebar-module-inset {
+  color: black;
+  background-color: #9c7c38;
+  border: 2px solid black;
+}
+
+.sidebar-module a {
+  color: #9c7c38;
+}
+
+.blog-main a {
+  color: #9c7c38;
+}
+
+.blog-btn {
+  background-color: #9c7c38;
+  border: 2px solid black;
+  font-family: 'Bree Serif';
+  color: black;
+  border-radius: 10px;
 }
