@@ -2,6 +2,16 @@
 @import "jquery-ui";
 @import "gritter";
 
+@font-family{
+  font-family: 'Bree Serif';
+  src:font-url('BreeSerif-Regular.ttf');
+}
+
+@font-family{
+  font-family: 'Oswald';
+  src:font-url('Oswald-Regular.ttf');
+}
+
 body {
   min-height: 75rem; /* Can be removed; just added for demo purposes */
   font-family: 'Bree Serif';
@@ -24,7 +34,7 @@ h6, .h6 {
   padding-top: 6rem;
   padding-bottom: 6rem;
   margin-bottom: 0;
-  background-color: #fff;
+  background-color: #545b62e3;
 }
 
 .jumbotron p:last-child {
@@ -33,6 +43,7 @@ h6, .h6 {
 
 .jumbotron-heading {
   font-weight: 300;
+  color: #e8d7a9;
 }
 
 .jumbotron .container {
@@ -113,7 +124,6 @@ h6, .h6 {
   min-height: 50rem; /* Can be removed; just added for demo purposes */
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: #f7f7f7;
 }
 
 .card {
@@ -122,6 +132,7 @@ h6, .h6 {
   padding: .75rem;
   margin-bottom: 2rem;
   border: 0;
+  font-family: 'Bree Serif';
 }
 
 .card > img {
@@ -130,15 +141,27 @@ h6, .h6 {
 
 .card-text {
   font-size: 85%;
+  font-family: 'Bree Serif';
 }
 
 footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
+  background-color: #545b62e3;
+  bottom: 0px;
+  position: fixed;
+  width: 100%;
+  padding-top: 40px;
 }
 
 footer p {
   margin-bottom: .25rem;
+}
+
+footer a {
+  color: #e8d7a9;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 /*
@@ -157,4 +180,54 @@ footer p {
 
 .port {
   float: right;
+}
+
+.port-cards {
+  color: black;
+  background-color: #9c7c38e8;
+  border: 2px solid black;
+  font-family: 'Bree Serif';
+}
+
+.port-img {
+  border: 2px solid black;
+}
+
+.port-titles a {
+  color: black;
+}
+
+.parabackground {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: image-url('goldbg.png') no-repeat;
+  background-size: cover; 
+}
+
+.text-custom {
+  color: #e8d7a9 !important;
+}
+
+.btn-custom {
+  background-color: #9c7c38;
+  border: 2px solid black;
+  font-family: 'Bree Serif';
+  color: black;
+}
+
+.show-cards {
+  height:  420px;
+  width: 300px;
+}
+
+.album .row {
+  padding-bottom: 150px;
 }

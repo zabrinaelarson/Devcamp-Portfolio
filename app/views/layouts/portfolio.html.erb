@@ -18,16 +18,19 @@
 
   <body>
     <div>
-      <%= render 'shared/portfolio_nav' %>
-    </div>
-    <div>
-      <%= render 'shared/portfolio_masthead' unless logged_in?(:site_admin) %>
-    </div>
+      <div> 
+        <%= render 'shared/portfolio_nav' %>
+      </div>
+      <%= image_tag 'goldbg.png', class: 'parabackground' %>
+      <div>
+        <%= render 'shared/portfolio_masthead' unless logged_in?(:site_admin) %>
+      </div>
 
-    <%= yield %>
+      <%= yield %>
 
-    <%= render 'shared/portfolio_footer' %>
+      <%= render 'shared/portfolio_footer' %>
     
-    <%= alerts %>
+      <%= alerts %>
+    </div>
   </body>
 </html>
