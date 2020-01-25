@@ -152,6 +152,8 @@ footer {
   position: fixed;
   width: 100%;
   padding-top: 40px;
+  height: 30px;
+  margin-top: 80;
 }
 
 footer p {
@@ -176,10 +178,10 @@ footer a {
   color: black;
   float: right;
   margin-right: 50px;
-}
+} 
 
 .port {
-  float: right;
+  text-align: center;
 }
 
 .port-cards {
@@ -230,4 +232,44 @@ footer a {
 
 .album .row {
   padding-bottom: 150px;
+}
+
+.port-footer {
+  height: 30px;
+}
+
+.nav-box {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-nav {
+  width: 100%;
+}
+
+.btn-cus { 
+  background-color: #008000;
+  color: black;
+  border: 2px solid black;
+}
+
+.port-card-new {
+  color: black;
+  background-color: #9c7c38e8;
+  border: 2px solid black;
+  font-family: 'Bree Serif';
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.new-card {
+  text-align: center;
+  font-weight: bolder;
+  background-color: #9c7c38e8;
+  font-family: 'Bree Serif';
+}
+
+.bottom-port {
+  margin-bottom: 160px;
 }

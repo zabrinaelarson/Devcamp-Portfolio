@@ -1,24 +1,24 @@
 <div class="pos-f-t">
   <nav class="navbar navbar-dark bg-dark">
     <div class="collapse custom-nav" id="navbarToggleExternalContent">
-      <div class="container">
-        <div class="row">
+      <div class="container-nav">
+        <div class="row nav-box">
           <div class="col-sm-8 py-4">
-            <h4 class="text-white">About</h4>
-            <p class="text-muted">This website is my portfolio, everything encountered here was built using Ruby on Rails and acts as an example of what I am capable of. Its hard to show EVERYTHING thats possible though so lets talk about your ideas and what we can do to bring them to life. </p>
+            <h4 class="text-custom">About</h4>
+            <p class="text-custom">This website is my portfolio, everything encountered here was built using Ruby on Rails and acts as an example of what I am capable of. Its hard to show EVERYTHING thats possible though so lets talk about your ideas and what we can do to bring them to life. </p>
           </div>
           <div class="col-sm-4 py-4 port">
-            <h4 class="text-white">More to Explore...</h4>
+            <h4 class="text-custom">More to Explore...</h4>
             <ul class="list-unstyled">
-                <%= nav_helper 'text-white', 'li' %>
-              <li><%= login_helper 'text-white' %></li>
+                <%= nav_helper 'text-custom', 'li' %>
+              <li><%= login_helper 'text-custom' %></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
     <div class="container d-flex justify-content-between">
-    <%= link_to 'Zabrina Larson', root_path, class: 'navbar-brand' %>
+    <%= link_to 'Zabrina Larson', root_path, class: 'navbar-brand text-custom' %>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
       </button>
