@@ -186,7 +186,7 @@ GEM
       byebug (~> 9.1)
       pry (~> 0.10)
     public_suffix (3.0.1)
-    puma (3.11.0)
+    puma (3.12.3)
     rack (2.0.6)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
@@ -311,7 +311,7 @@ DEPENDENCIES
   mini_magick (~> 4.9, >= 4.9.3)
   petergate (~> 1.8, >= 1.8.1)
   pry-byebug
-  puma (~> 3.7)
+  puma (~> 3.12)
   rails (~> 5.1.4)
   sass-rails (~> 5.0)
   selenium-webdriver
