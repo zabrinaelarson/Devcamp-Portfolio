@@ -235,7 +235,12 @@ footer a {
 }
 
 .port-footer {
-  height: 30px;
+  margin-top: 1px;
+  padding: 4px;
+  position: fixed;
+  height: 50px;
+  bottom: 0px;
+  width: 100%;
 }
 
 .nav-box {
@@ -272,4 +277,4 @@ footer a {
 
 .bottom-port {
   margin-bottom: 160px;
-}
+} 

@@ -12,7 +12,8 @@ class BlogsController < ApplicationController
     else
       @blogs = Blog.published.page(params[:page]).per(5)
     end
-    @page_title = "Zabrina's Blog"
+    @page_title = "Zatify's Blog"
+    @comments = Comment.all
   end
 
   # GET /blogs/1
@@ -20,7 +21,7 @@ class BlogsController < ApplicationController
   def show
     if logged_in?(:site_admin) || @blog.published?
       @blog = Blog.includes(:comments).friendly.find(params[:id])
-      @comment = Comment.new
+      @comments = Comment.new
 
       @page_title = @blog.title
       @seo_keywords = @blog.body

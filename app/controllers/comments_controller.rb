@@ -1,13 +1,22 @@
 class CommentsController < ApplicationController
 
+def index 
+	@comments = Comment.all
+end
+
 def create
-	@comment = current_user.comments.build(comment_params)
-end
-
-private
-
-def comment_params
-	params.require(:comment).permit(:content)
-end
-
+  @commentable = Article.find(params[:article_id])
+  @comment = @commentable.comments.new(comment_params)
+  if @comment.save
+    $pubnub.publish(
+      channel: "comments-" + "#{@commentable.id}",
+      message: { comment: comment_params["content"] }
+    )
+    respond_to do |format|
+     format.js { render :nothing => true }
+     format.html
+   end
+  else
+    render :new
+  end
 end

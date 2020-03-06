@@ -1,9 +1,9 @@
 <div class="blog-header">
     <div class="container">
-        <h1 class="blog-title text-custom">My Blog</h1>
-        <p class="lead blog-description text-custom">An example blog template built with Bootstrap.</p>
+        <h1 class="blog-title text-custom">Blog About It</h1>
+        <p class="lead blog-description text-custom">Look around and see the  projects currently in production. Comming Soon to this area is commmenting for the articles that load in real time!</p>
         <span>
-        	<%= link_to 'Write a New Blog', new_blog_path, class:"btn btn-sm blog-btn" if logged_in?(:site_admin) %>	
+        	<%= link_to 'New Blog', new_blog_path, class:"btn btn-sm blog-btn" if logged_in?(:site_admin) %>	
         </span>
 
         <span>
@@ -11,4 +11,4 @@
             <%= link_to "Featured", blogs_path, class:"btn btn-sm blog-btn" %>
         </span>
     </div>
-</div>
+</div> 

@@ -1,16 +1,16 @@
 <div class="app-card-container">
 	<div class="card">
-		<h1>About Me</h1>
+		<h1>Meet the Developer...</h1>
 		<div class="row">
 		    <div class="col-md-4">
-		        <%= image_tag "profile.jpg", width:300, alt:"Profile Image" %>
+		        <%= image_tag "profileprof.jpg", width: "300", class:"rotateimg90", alt:"A confident, pretty asian woman in a red shirt" %>
 		        <div class="skills">
 		        	<% @skills.each do |skill| %>
 		        		<div class="skill">
 		        			<h4><%= skill.title %></h4>
 			        		<div class="progress">
 				        		<div 
-				        			class="progress-bar progress-bar-striped bg-warning"
+				        			class="progress-bar progress-bar-striped bg-danger progress-bar-danger"
 				        			role="progressbar"
 				        			aria-valuenow="<%= skill.percent_utilized %>"
 				        			aria-valuefax="100"
@@ -27,7 +27,7 @@
 		        <p>My name is Zabrina. I am a new freelance web application developer. Working to build my own buisness and work for myself I am dedicated to building my portfolio and knowledge in the process. I have worked in customer service for the past 6 years and for the past 2 I have worked Tech Support for a dental software with a focus on Imaging. Basically what I have taken from my experience and plan to do with my own buisness is provide quality websites for individuals while working within the constrainsts of their budget and time constraints. Eventually I plan to grow my buisness to include helping with marketing and helping my clients with their online presence.</p>
 		        <p>I promise to provide a quality website and open communication along the way. Help me build the website for your future while I build the portfolio for mine.</p>
 
-		        <p>
+		        <p class="positionAB">
 		        	<button 
 		        		class="btn btn-primary custom-about"
 		        		type="button"
@@ -53,20 +53,48 @@
 
 		        <p>
 		        	<div class="collapse" id="jobHistory">
-		        		<div class="card card-block">
-		        			Example 1 
+		        		<div class="card card-block aboutcards">
+		        			<h1>Lead Imaging Tech for a cloud based Dental Software </h1> 
+		        			<hr><br>
+		        			<h3>Synopsis-</h3>
+		        			<p> I started with the compaay as a phone rep for Customer Service/ Technical Spport. While the company expands I have specialized in the integration of dental imaging equipment with the cloud based software.</p>
+		        			<br>
+		        			<h3>Duties-</h3>
+		        			<uk>
+		        				<li>Training New Hires on how to handle and troubleshoot Imaging Equipment with the software</li>
+		        				<li> Weekly follow up trainings with exisiting team.</li>
+		        				<li>Monitoring of all imaging calls that come through our support team to make sure our customers are recieving the most efficient and timely help and to see where more training is needed and where. </li>
+		        				<li>Creating training tools and guides  to help the team remaining scalable with expected growth.</li>
+		        			</uk>
+		        			<br>
+		        			<h3>How my experience translates-</h3>
+		        			<p>My experience in building training materials and making  details of my job accesible and scable for future use translates to being able to explain your project and the  dynamics that go into it. Meaning you will have open  communication with me throughout the project and I have a lot of practice at anticipating the needs of my customers and providing above and beyond what is asked t</p>
 		        		</div>
-		        		<div class="card card-block">
-		        			Example 2
+		        		<div class="card card-block aboutcards">
+		        			<h1>Server for Multiple Restraunts</h1> 
+		        			<hr><br>
+		        			<h3>Synopsis-</h3>
+		        			<p> I worked for about 3 years as a server for restrants. Most of the time holding two jobs at once </p>
+		        			<br>
+		        			<h3>Duties-</h3>
+		        			<uk>
+		        				<li>Training new hires to be the most efficient with the exisiting team.</li>
+		        				<li>Training on Point of Sale terminals.</li>
+		        				<li> Working with the front of house staff to pace packed restraunts and increase income.</li>
+		        				<li>Detail oriented planning to ensure satisfied customers.</li>
+		        			</uk>
+		        			<br>
+		        			<h3>How my experience translates-</h3>
+		        			<p>One of the biggest responsibilities of Server is to anticipate the needs of the customer. In every job I held in the restaraunt industry I was made a trainer within 4 months, indicating an ability to excel at new material and process it in such a way as to being able to teach others the same. </p>
 		        		</div>
 		        	</div>
 
 		        	<div class="collapse" id="education">
 		        		<div class="card card-block">
-		        			Example 1 
+		        			 Bottega Technical School 
 		        		</div>
 		        		<div class="card card-block">
-		        			Example 2
+		        			 Salt Lake Community College
 		        		</div>
 		        	</div>
 		        </p>

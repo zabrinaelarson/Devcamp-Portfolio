@@ -1,7 +1,10 @@
 module BlogsHelper
-	def gravatar_helper user
-		image_tag "https://www.gravatar.com/avatar/#{Digest::MD5.hexdigest(user.email)}", width: 60
-	end
+	
+  def user_gravatar(user)
+    gravatar_id = Digest::MD5::hexdigest(user.email.downcase)
+    gravatar_url = "http://secure.gravatar.com/avatar/#{gravatar_id}"
+    image_tag(gravatar_url, alt: user.name)
+  end
 
 	class CodeRayify < Redcarpet::Render::HTML
 		def block_code(code, language)

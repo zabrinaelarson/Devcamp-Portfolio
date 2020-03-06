@@ -4,6 +4,7 @@ class TopicsController < ApplicationController
 
   def index
   	@topics = Topic.all
+    @comments = Comment.all
   end
 
   def show

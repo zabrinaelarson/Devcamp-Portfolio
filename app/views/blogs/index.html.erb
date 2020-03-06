@@ -1,10 +1,11 @@
 <div class="col-sm-8 blog-main">
-  <%= paginate @blogs %>
+	<div class="card blog-card">
+  		<%= paginate @blogs %>
   
-  <%= render @blogs %>
+  		<%= render @blogs %>
   
-  <%= paginate @blogs %>
-
+  		<%= paginate @blogs %>
+	</div>
 </div>
 
 

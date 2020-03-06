@@ -58,9 +58,9 @@ gem 'friendly_id', '~> 5.1.0'
 
 gem 'devise', '~> 4.4', '>= 4.4.2'
 
-gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'bootstrap', '~> 4.4', '>= 4.4.1'
 
-gem 'jquery-rails'
+gem 'jquery-rails', '~> 4.3', '>= 4.3.5'
 
 gem 'petergate', '~> 1.8', '>= 1.8.1'
 
@@ -89,3 +89,9 @@ gem 'redis', '~> 4.1'
 gem 'redcarpet', '~> 3.5'
 
 gem 'coderay', '~> 1.1', '>= 1.1.2'
+
+gem 'pusher', '~> 1.3', '>= 1.3.3'
+
+gem 'figaro', '~> 1.1', '>= 1.1.1'
+
+gem 'pubnub', '~> 4.2', '>= 4.2.3'

@@ -20,7 +20,7 @@ a,
 a:focus,
 a:hover {
   color: #fff;
-}
+} 
 
 
 /* Custom default button */
@@ -305,6 +305,12 @@ h6, .h6 {
   color: #e8d7a9 !important;
 }
 
+.package-button:hover {
+  color: black;
+  background-color: #9c7c38e8;
+  border: 1px solid black;
+}
+
 .package-body {
   font-family: 'Bree Serif';
   color: black;
@@ -322,6 +328,9 @@ h6, .h6 {
 .consultation {
   margin-top: 20px;
   border-radius: 10px;
+  font-size: 200%;
+  font-style: italic;
+  padding: 20px;
 }
 
 .card {
@@ -344,7 +353,7 @@ h6, .h6 {
 
 .custom-about {
   background-color: black;
-  color: white;
+  color: #9c7c38;
   border: 2px solid black;
 }
 
@@ -370,4 +379,48 @@ h6, .h6 {
   background-color: #cc0000;
   color: black;
   border: 2px solid black;
+}
+
+.subheading-home {
+  color: #ffcc66;
+  font-style:  bold;
+}
+
+.aboutcards {
+  padding: 20px;
+}
+
+.aboutcards > h3 {
+  font-style: italic;
+  font-weight: 150%;
+}
+
+.aboutcards > hr {
+  border: 1px solid black;
+}
+
+.positionAB > button:hover {
+  color:  #ffcc66;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #9c7c38;
+  border: .05rem solid #9c7c38; 
+}
+
+.positionAB > button:focus {
+  color:  #ffcc66;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #9c7c38;
+  border: .05rem solid #9c7c38; 
+}
+
+.rotateimg90 {
+  -webkit-transform:rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
